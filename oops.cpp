@@ -12,17 +12,16 @@ public:
         cout<<"Company: "<< Company << endl;
         cout<<"Age: "<< Age << endl;
     }
+    Employee(string name, string company, int age){
+        Name = name;
+        Company = company;
+        Age = age;
+    }
 };
 int main()
 {
-    Employee employee1;
-    employee1.Name = "Akshar";
-    employee1.Company = "Solar";
-    employee1.Age = 23;
+    Employee employee1 = Employee("Akshar", "Solar", 23);
     employee1.IntroduceYourself();
-    Employee employee2;
-    employee2.Name = "John";
-    employee2.Company = "Lunar";
-    employee2.Age = 34;
+    Employee employee2 = Employee("John", "Amazon", 45);
     employee2.IntroduceYourself();
 }
