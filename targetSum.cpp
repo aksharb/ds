@@ -12,6 +12,7 @@ int main()
     }
     cout<<"Enter the target: ";
     cin>>value;
+    //check:
     for(int i = 0; i < 4; i++)
     {
         for(int j = i+1; j < 5; j++)
